@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(rtmp_lib)
+
+set (SOURCE
+    "RTMPHandler.cpp"
+    "RTMPMessage.cpp"
+    "RTMPParser.cpp"
+    "RTMPResponse.cpp"
+)
+
+add_library(rtmp_lib ${SOURCE})
+
+target_include_directories(rtmp_lib PUBLIC "../")
